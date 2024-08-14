@@ -1,0 +1,9 @@
+apiDir: "../arquillian-test-example-project-api/src/main/java"
+apiPackagePath: "com.arquillian.test.example.project"
+application:
+    baseURI: "/arquillian-test-example-project"
+    className: "ArquillianTestExampleProjectApplication"
+    name: "ArquillianTestExampleProject"
+author: "vinicius"
+clientDir: "../arquillian-test-example-project-client/src/main/java"
+testDir: "../arquillian-test-example-project-test/src/testIntegration/java"

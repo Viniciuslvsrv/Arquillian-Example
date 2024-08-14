@@ -1,0 +1,3 @@
+Bundle-Name: arquillian-test-example-project-impl
+Bundle-SymbolicName: com.arquillian.test.example.project.impl
+Bundle-Version: 1.0.0

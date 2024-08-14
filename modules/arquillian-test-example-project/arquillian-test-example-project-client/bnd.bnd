@@ -1,0 +1,7 @@
+Bundle-Name: arquillian-test-example-project-client
+Bundle-SymbolicName: com.arquillian.test.example.project.client
+Bundle-Version: 1.0.0
+
+Export-Package:\
+	com.arquillian.test.example.project.dto.v1_0,\
+	com.arquillian.test.example.project.resource.v1_0

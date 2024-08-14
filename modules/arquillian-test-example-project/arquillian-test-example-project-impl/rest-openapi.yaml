@@ -1,0 +1,57 @@
+info:
+    description: "ArquillianTestExampleProject REST API"
+    license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    title: "ArquillianTestExampleProject"
+    version: v1.0
+openapi: 3.0.1
+
+components:
+    schemas:
+        Steps:
+          properties:
+            step:
+              type: string
+            description:
+              type: string
+
+paths:    
+  "/Steps":  
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+                $ref: '#/components/schemas/Steps'
+          application/xml:
+            schema:
+                $ref: '#/components/schemas/Steps'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Steps'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Steps'
+          description: ''
+      tags: ["Steps"]     
+  
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Steps'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Steps'
+                type: array
+          description: ''
+      tags: ["Steps"]          
