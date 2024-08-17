@@ -1,11 +1,7 @@
 Bundle-Name: arquillian-test-example-project-test
 Bundle-SymbolicName: com.arquillian.test.example.project.test
 Bundle-Version: 1.0.0
--includeresource: com.arquillian.test.example.project.client.jar=../arquillian-test-example-project-client/build/libs/com.arquillian.test.example.project.client-1.0.0.jar;lib:=true
--provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}
+-includeresource: \
+    com.arquillian.test.example.project.client.jar=../arquillian-test-example-project-client/build/libs/com.arquillian.test.example.project.client-1.0.0.jar;lib:=true,\
+    META-INF/module-log4j.xml=src/testIntegration/resources/META-INF/module-log4j.xml,\
 
-Export-Package: com.arquillian.test.example.project.resource.v1_0.test.StepsResourceTest
-
-Conditional-Package: \
-	org.slf4j.*,\
-    org.apache.log4j.*,\
